@@ -1,0 +1,9 @@
+@import "tailwindcss";
+
+.water-tile {
+    background: linear-gradient(
+        135deg,
+        #38bdf8,
+        #0ea5e9
+    );
+}

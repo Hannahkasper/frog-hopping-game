@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Frog Hopping Game</title>
+
+    <link rel="stylesheet" href="output.css">
+</head>
+
+<body class="bg-blue-100">
+
+    <main class="min-h-screen flex flex-col items-center justify-center p-4">
+
+        <!-- Game Title -->
+        <h1 class="text-3xl sm:text-4xl font-bold text-center mb-3">
+            Frog Hopping Game
+        </h1>
+
+        <!-- Instructions -->
+        <div class="text-center mb-6">
+            <p class="text-base sm:text-lg font-semibold">
+                How to Play
+            </p>
+
+            <p class="text-sm sm:text-base">
+                Use the arrow keys to move the frog from lily pad to lily pad.
+            </p>
+
+            <p class="text-sm sm:text-base mt-1">
+                Try to make as many hops as you can!
+            </p>
+        </div>
+
+        <!-- Land -->
+        <div class="bg-green-800 p-4 sm:p-8 rounded-3xl shadow-xl w-full max-w-lg">
+
+            <!-- Pond -->
+            <div class="grid grid-cols-2 aspect-square w-full">
+
+                <!-- Top Left -->
+                <div class="water-tile flex items-center justify-center">
+                    <div
+                        class="lily-pad w-2/3 aspect-square bg-green-600 rounded-full flex items-center justify-center shadow-lg border-4 border-green-700">
+                    </div>
+                </div>
+
+                <!-- Top Right -->
+                <div class="water-tile flex items-center justify-center">
+                    <div
+                        class="lily-pad w-2/3 aspect-square bg-green-600 rounded-full flex items-center justify-center shadow-lg border-4 border-green-700">
+                    </div>
+                </div>
+
+                <!-- Bottom Left -->
+                <div class="water-tile flex items-center justify-center">
+                    <div
+                        class="lily-pad w-2/3 aspect-square bg-green-600 rounded-full flex items-center justify-center shadow-lg border-4 border-green-700">
+                    </div>
+                </div>
+
+                <!-- Bottom Right -->
+                <div class="water-tile flex items-center justify-center">
+                    <div
+                        class="lily-pad w-2/3 aspect-square bg-green-600 rounded-full flex items-center justify-center shadow-lg border-4 border-green-700">
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Hop Counter -->
+            <p class="mt-4 text-lg font-semibold">
+                Hops: <span id="hop-count">0</span>
+            </p>
+
+        </div>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
